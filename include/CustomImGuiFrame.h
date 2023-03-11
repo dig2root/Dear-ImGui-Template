@@ -1,5 +1,4 @@
 #include "ImGuiFrame.h"
-#include "glad/glad.h"
 
 class CustomImGuiFrame : public ImGuiFrame {
 public:

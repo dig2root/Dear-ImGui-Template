@@ -1,4 +1,5 @@
 #include "CustomImGuiFrame.h"
+#include "glad/glad.h"
 
 void CustomImGuiFrame::Update() {
 
