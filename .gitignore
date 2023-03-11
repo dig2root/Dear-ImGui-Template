@@ -33,8 +33,7 @@
 
 # CMake files
 CMakeSettings.json
-cmake-build-debug
-cmake-build-release
+out
 
 # Visual Studio\
 .vs
