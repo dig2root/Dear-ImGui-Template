@@ -1,0 +1,115 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/linmath-x64-windows-2022-07-30-f09ee686-0a84-4bd4-8287-1a22a640563d",
+  "name": "linmath:x64-windows@2022-07-30 974d28f3bbe11746abc4c2bea0a94903ca1964be835c6104942baa8d12269990",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-538539c4e364dd6f14f5e36f6704144254845159"
+    ],
+    "created": "2023-03-11T20:08:43Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "DEPENDENCY_MANIFEST_OF",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "linmath",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "2022-07-30",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "https://github.com/datenwolf/linmath.h",
+      "licenseConcluded": "WTFPL",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "linmath.h -- A small library for linear math as required for computer graphics",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "linmath:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "974d28f3bbe11746abc4c2bea0a94903ca1964be835c6104942baa8d12269990",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "WTFPL",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "datenwolf/linmath.h",
+      "downloadLocation": "git+https://github.com/datenwolf/linmath.h@3eef82841046507e16a0f6194a61cee2eadd34b3",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cd8bc9c29b984cbb2fb1a1e743566e8f099d243c294658e84980cdbd83c881122f1abee68c50139ee9fddaa96f22f52eeae8e26dc86caa114cd11ebe5644a4db"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ddad806f7e626b04e5477e20a26ec57fe0a537b394e2ec913570c7688fedac3b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0fcec2e2d60bd730b0519988c0a5dba783d696196a80f0c61ab80d3b46c4e197"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

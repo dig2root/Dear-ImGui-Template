@@ -1,0 +1,52 @@
+Détection du hachage du compilateur pour le triplet x64-windows...
+Les packages suivants seront générés et installés :
+  * egl-registry[core]:x64-windows -> 2022-09-20
+    glad[core,loader]:x64-windows -> 0.1.36
+    glfw3[core]:x64-windows -> 3.3.8#2
+    imgui[core,glfw-binding,opengl3-binding]:x64-windows -> 1.89.3
+    linmath[core]:x64-windows -> 2022-07-30
+  * opengl-registry[core]:x64-windows -> 2022-09-29#1
+  * vcpkg-cmake[core]:x64-windows -> 2022-12-22
+  * vcpkg-cmake-config[core]:x64-windows -> 2022-02-06#1
+Les packages supplémentaires (*) seront modifiés pour terminer cette opération.
+Package(s) 8 restauré(s) à partir de C:\Users\clemr\AppData\Local\vcpkg\archives dans 533.9 ms. Utilisez --déboguer pour afficher plus de détails.
+Installation de 1/8 vcpkg-cmake-config:x64-windows...
+Temps écoulé pour gérer vcpkg-cmake-config:x64-windows: 45.84 ms
+Installation de 2/8 vcpkg-cmake:x64-windows...
+Temps écoulé pour gérer vcpkg-cmake:x64-windows: 101 ms
+Installation de 3/8 egl-registry:x64-windows...
+Temps écoulé pour gérer egl-registry:x64-windows: 93.33 ms
+Installation de 4/8 opengl-registry:x64-windows...
+Temps écoulé pour gérer opengl-registry:x64-windows: 264.8 ms
+Installation de 5/8 glad:x64-windows...
+Temps écoulé pour gérer glad:x64-windows: 122 ms
+Installation de 6/8 glfw3:x64-windows...
+Temps écoulé pour gérer glfw3:x64-windows: 90.43 ms
+Installation de 7/8 imgui:x64-windows...
+Temps écoulé pour gérer imgui:x64-windows: 209 ms
+Installation de 8/8 linmath:x64-windows...
+Temps écoulé pour gérer linmath:x64-windows: 189.2 ms
+Temps total de l’installation : 1.651 s
+glad fournit des cibles CMake :
+
+    # ceci est généré de manière heuristique et peut ne pas être correct
+    find_package(glad CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glad::glad)
+
+glfw3 fournit des cibles CMake :
+
+    # ceci est généré de manière heuristique et peut ne pas être correct
+    find_package(glfw3 CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glfw)
+
+imgui fournit des cibles CMake :
+
+    # ceci est généré de manière heuristique et peut ne pas être correct
+    find_package(imgui CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE imgui::imgui)
+
+linmath est en-tête uniquement et peut être utilisé à partir de CMake via :
+
+    find_path(LINMATH_INCLUDE_DIRS "linmath.h/linmath.h")
+    target_include_directories(main PRIVATE ${LINMATH_INCLUDE_DIRS})
+
