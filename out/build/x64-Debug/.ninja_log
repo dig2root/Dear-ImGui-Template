@@ -1,6 +1,0 @@
-# ninja log v5
-31	450	7002750305870262	CMakeFiles/Im0xDump.dir/src/CustomImGuiFrame.cpp.obj	35a0cbd4226e4b11
-5	174	7002745874105397	CMakeFiles/Im0xDump.dir/src/main.cpp.obj	6a54102553e0f661
-184	1275	7002745876414279	Im0xDump.exe	efc8ae2da2652de2
-16	454	7002734031995963	CMakeFiles/Im0xDump.dir/src/UseImGui.cpp.obj	cc5e9d121377d1d8
-17	452	7002750305870262	CMakeFiles/Im0xDump.dir/src/ImGuiFrame.cpp.obj	f27dfcd6218da9d9
